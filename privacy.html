@@ -9,12 +9,14 @@
         .back-link { display: inline-block; margin-bottom: 30px; text-decoration: none; color: #595959; font-size: 14px; font-weight: bold; transition: color 0.2s; }
         .back-link:hover { color: #3030F1; }
         hr { border: 0; border-top: 1px solid #eee; margin: 20px 0; }
-        h1 { font-size: 26px; margin-bottom: 0.5em; }
-        h2 { font-size: 19px; margin-top: 30px; color: #000; }
+        h1 { font-size: 26px; margin-bottom: 0.5em; color: #000; }
+        h2 { font-size: 19px; margin-top: 30px; color: #000; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         h3 { font-size: 17px; margin-top: 20px; color: #000; }
         .body_text { color: #595959; font-size: 14px; }
         .link { color: #3030F1; text-decoration: none; word-break: break-word; }
         ul { list-style-type: square; margin-bottom: 1em; }
+        ol { margin-bottom: 1em; }
+        ol li { margin-bottom: 5px; }
     </style>
 </head>
 <body>
@@ -27,57 +29,82 @@
         <p style="color: #7f7f7f;"><strong>Last updated: May 13, 2026</strong></p>
 
         <div class="body_text">
-            <p>This Privacy Notice for <strong>Charge</strong> (doing business as <strong>Charge App</strong>), describes how and why we might access, collect, store, use, and/or share ("<strong>process</strong>") your personal information when you use our services ("<strong>Services</strong>"), including when you download and use our mobile application, <strong>Charge</strong>.</p>
+            <p>This Privacy Notice for <strong>Charge</strong> (doing business as <strong>Charge App</strong>), describes how and why we might access, collect, store, use, and/or share ("<strong>process</strong>") your personal information when you use our services ("<strong>Services</strong>").</p>
             
-            <p><strong>Charge</strong> is a personal energy and productivity tracking application designed to help users manage their daily capacity and personal growth. To function, the app collects and stores user account information (email), custom task lists, and personal journal entries. All data is processed strictly to provide a personalized, localized tracking and analytics experience.</p>
+            <p><strong>About Charge:</strong> Charge is a personal energy and productivity tracking application. To provide our features—including the "energy battery" visualizer, "Daily Spark" reflections, and your private "Journal"—we collect and store authentication data and your personal logs securely via Firebase.</p>
 
-            <p><strong>Questions or concerns?</strong> If you do not agree with our policies and practices, please do not use our Services. If you still have any questions, please contact us at <a href="mailto:chargeapp.support@gmail.com" class="link">chargeapp.support@gmail.com</a>.</p>
+            <p><strong>Questions or concerns?</strong> If you still have any questions, please contact us at <a href="mailto:chargeapp.support@gmail.com" class="link">chargeapp.support@gmail.com</a>.</p>
 
             <h2>SUMMARY OF KEY POINTS</h2>
-            <p><strong>What personal information do we process?</strong> We process information depending on how you interact with Charge. This includes your email for authentication and the task/energy data you input into the app.</p>
-            <p><strong>Do we process sensitive info?</strong> No. We do not process sensitive personal information.</p>
-            <p><strong>How do we keep your info safe?</strong> We use technical security measures via Google Cloud and Firebase to protect your data, though no system is 100% secure.</p>
+            <p>This summary provides key points from our Privacy Notice. We process your information to provide, improve, and administer our Services, specifically your account management and energy analytics. We do not process sensitive personal information or collect info from third parties other than your authentication provider.</p>
 
             <h2 id="toc">TABLE OF CONTENTS</h2>
             <ol>
-                <li><a href="#infocollect" class="link">WHAT INFORMATION DO WE COLLECT?</a></li>
-                <li><a href="#infouse" class="link">HOW DO WE PROCESS YOUR INFORMATION?</a></li>
-                <li><a href="#whoshare" class="link">WHEN AND WITH WHOM DO WE SHARE YOUR INFORMATION?</a></li>
-                <li><a href="#cookies" class="link">DO WE USE COOKIES?</a></li>
-                <li><a href="#social" class="link">HOW DO WE HANDLE SOCIAL LOGINS?</a></li>
-                <li><a href="#retain" class="link">HOW LONG DO WE KEEP YOUR INFO?</a></li>
-                <li><a href="#privacyrights" class="link">WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
-                <li><a href="#uslaws" class="link">US STATE SPECIFIC RIGHTS</a></li>
+                <li><a href="#infocollect" class="link">1. WHAT INFORMATION DO WE COLLECT?</a></li>
+                <li><a href="#infouse" class="link">2. HOW DO WE PROCESS YOUR INFORMATION?</a></li>
+                <li><a href="#whoshare" class="link">3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
+                <li><a href="#cookies" class="link">4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</a></li>
+                <li><a href="#social" class="link">5. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</a></li>
+                <li><a href="#retain" class="link">6. HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
+                <li><a href="#safe" class="link">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</a></li>
+                <li><a href="#minors" class="link">8. DO WE COLLECT INFORMATION FROM MINORS?</a></li>
+                <li><a href="#rights" class="link">9. WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
+                <li><a href="#dnt" class="link">10. CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+                <li><a href="#uslaws" class="link">11. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a></li>
+                <li><a href="#updates" class="link">12. DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
+                <li><a href="#contact" class="link">13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
+                <li><a href="#request" class="link">14. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
             </ol>
 
             <h2 id="infocollect">1. WHAT INFORMATION DO WE COLLECT?</h2>
-            <p>We collect personal information you disclose to us, including email addresses, names, and authentication data. When you use the app, we also automatically collect mobile device data (ID, model, and OS) to maintain the security and operation of the service.</p>
+            <p>We collect personal information that you disclose to us, including <strong>names, email addresses, and authentication data</strong>. We also automatically collect device data such as your mobile device ID, model, and manufacturer to maintain app security.</p>
             <h3>Google API</h3>
-            <p>Our use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" class="link">Google API Services User Data Policy</a>.</p>
+            <p>Our use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" class="link">Google API Services User Data Policy</a>.</p>
 
             <h2 id="infouse">2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
-            <p>We process your information to facilitate account creation, deliver energy distribution trends, and provide support. We may also process data to identify usage trends and evaluate app performance.</p>
+            <p>We process your information to manage your account, deliver energy distribution analytics, and solve potential technical issues. We only process your data when we have a valid legal reason to do so.</p>
 
-            <h2 id="whoshare">3. WHEN AND WITH WHOM DO WE SHARE YOUR INFORMATION?</h2>
-            <p>We share data with third-party vendors including <strong>Google Firebase</strong> (for authentication and cloud storage) and <strong>Vercel</strong> (for support site hosting). We do not sell your personal information.</p>
+            <h2 id="whoshare">3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
+            <p>We share data with third-party vendors who perform services for us: <strong>Google Firebase</strong> (for authentication and cloud database storage) and <strong>Vercel</strong> (for support site hosting).</p>
 
-            <h2 id="cookies">4. DO WE USE COOKIES?</h2>
-            <p>We use essential technical tokens to maintain your secure session. For details, see our <a href="cookies.html" class="link">Cookie Notice</a>.</p>
+            <h2 id="cookies">4. DO WE USE COOKIES AND OTHER TRACKING TECHNOLOGIES?</h2>
+            <p>We use essential technical tokens and local storage to maintain your login session. For details, see our <a href="cookies.html" class="link">Cookie Notice</a>.</p>
 
             <h2 id="social">5. HOW DO WE HANDLE YOUR SOCIAL LOGINS?</h2>
-            <p>If you log in using a third-party account (like Google Sign-In), we receive certain profile information like your name and email address to create your account.</p>
+            <p>If you log in via Google, we receive profile information like your name and email address from the provider to create your Charge account.</p>
 
             <h2 id="retain">6. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
-            <p>We keep your information for as long as you have an active account with us, or as required by law for accounting or legal purposes.</p>
+            <p>We keep your personal information only for as long as it is necessary for the purposes set out in this notice, typically for the duration you have an active account with us.</p>
 
-            <h2 id="privacyrights">7. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
-            <p>You can review, change, or terminate your account at any time. To request deletion of your data, visit our <a href="contact.html" class="link">Contact Page</a>.</p>
+            <h2 id="safe">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
+            <p>We aim to protect your personal information through a system of organizational and technical security measures via Google Cloud and Firebase infrastructure.</p>
 
-            <h2 id="uslaws">8. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2>
-            <p>Residents of states like California, Colorado, and Virginia have specific rights to access and delete their data. We have not sold or shared any personal information with third parties for a commercial purpose in the preceding 12 months.</p>
+            <h2 id="minors">8. DO WE COLLECT INFORMATION FROM MINORS?</h2>
+            <p>We do not knowingly collect data from or market to children under 18 years of age. By using the app, you represent you are at least 18.</p>
 
-            <p style="margin-top: 50px; font-size: 12px;">This Privacy Policy was created with the help of Termly and updated for technical accuracy.</p>
+            <h2 id="rights">9. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
+            <p>Depending on your location, you have rights to access or delete your data. You can withdraw consent or terminate your account at any time in the app settings or by contacting us.</p>
+
+            <h2 id="dnt">10. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
+            <p>We do not currently respond to Do-Not-Track ("DNT") signals as no uniform technology standard has been finalized for implementation.</p>
+
+            <h2 id="uslaws">11. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h2>
+            <p>Residents of states like California and Virginia have specific rights to request access to and deletion of their personal information. We do not sell your personal data.</p>
+
+            <h2 id="updates">12. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+            <p>Yes, we will update this notice as necessary to stay compliant with relevant laws. The updated version will be indicated by the date at the top.</p>
+
+            <h2 id="contact">13. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+            <p>If you have questions, you can email us at <a href="mailto:chargeapp.support@gmail.com" class="link">chargeapp.support@gmail.com</a>.</p>
+
+            <h2 id="request">14. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
+            <p>You have the right to request access to your data. To review or delete your information, please visit our <a href="contact.html" class="link">Contact Page</a>.</p>
+
+            <div style="margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px;">
+                <p style="font-size: 12px;">This Privacy Policy was created using Termly and updated for the Charge App infrastructure.</p>
+            </div>
         </div>
     </div>
+
 </body>
 </html>
